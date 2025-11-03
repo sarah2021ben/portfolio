@@ -16,10 +16,30 @@
 .swiper-rtl .swiper-button-prev:after {
   color: #f13024;
 }
+@theme {
+  --color-primary: #131424;
+  --color-secondary: #393A47;
+  --color-accent: #F13024;
+
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-sora: var(--font-sora), sans-serif;
+
+  --animate-spin-slow: spin 6s linear infinite;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
+
+  --background-image-explosion: url("/images/bg-explosion.png");
+  --background-image-circles: url("/images/bg-circles.png");
+  --background-image-circle-star: url("/images/circle-star.svg");
+  --background-image-site: url("/images/site-bg.svg");
+}
 
 @layer base {
   body {
-    @apply bg-[#393A47]  overflow-hidden leading-relaxed;
+    @apply bg-secondary  overflow-hidden leading-relaxed;
   }
   .page {
     @apply w-full h-screen overflow-hidden;

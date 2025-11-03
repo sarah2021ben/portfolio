@@ -1,9 +1,9 @@
 import React from "react";
-import ProjectsSlider from "../components/ProjectsSlider";
+import ServiceSlider from "../components/ServiceSlider";
 import Circles from "../components/Circles";
 import Bulb from "../components/Bulb";
 
-function Projects() {
+function Services() {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <Circles />
@@ -11,8 +11,8 @@ function Projects() {
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* textes */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
-            <h2 className="h2 xl:mt-12">
-              My Projects <span className="text-accent">.</span>
+            <h2 className="h2 xl:mt-8">
+              My Services <span className="text-accent">.</span>
             </h2>
             <p className="mb-4 max-w-[400px] mx-auto lg:mx-0">
               {" "}
@@ -24,7 +24,7 @@ function Projects() {
           </div>
           {/* sliders */}
           <div className="w-full xl:max-w-[65%]">
-            <ProjectsSlider />
+            <ServiceSlider />
           </div>
         </div>
       </div>
@@ -33,4 +33,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Services;

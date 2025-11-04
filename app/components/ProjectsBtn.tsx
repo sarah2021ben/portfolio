@@ -7,8 +7,8 @@ function ProjectsBtn() {
   return (
     <div className="mx-auto xl:mx-0">
       <Link
-        href="#"
-        className="relative w-[185px] h-[185px] flex justify-center items-center bg-circle-star bg-cover bg-center bg-no-repeat group"
+        href="/projects"
+        className="relative cursor-pointer z-8 w-[185px] h-[185px] flex justify-center items-center bg-circle-star bg-cover bg-center bg-no-repeat group"
       >
         <Image
           src="/images/rounded-text.png"

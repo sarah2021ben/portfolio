@@ -7,19 +7,17 @@ import {
   HiUser,
   HiViewColumns,
   HiRectangleGroup,
-  HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
 
 export const navbarItems = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "about", path: "/about", icon: <HiUser /> },
-  { name: "services", path: "/services", icon: <HiRectangleGroup /> },
   { name: "projects", path: "/projects", icon: <HiViewColumns /> },
   {
-    name: "testimonials",
-    path: "/testimonials",
-    icon: <HiChatBubbleBottomCenterText />,
+    name: "certifications",
+    path: "/certifications",
+    icon: <HiRectangleGroup />,
   },
   {
     name: "contact",
@@ -30,7 +28,6 @@ export const navbarItems = [
 
 const Navbar = () => {
   const pathname = usePathname();
-  console.log("Current Pathname:", pathname);
   return (
     <nav
       className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%]
